@@ -5,13 +5,14 @@ class BookManager {
   // this is a constructor with a paramater currentId set to 0 by default
   constructor(currentId = 0) {
     // 1. initialize an empty array called books
-
+    this._books = [];
     // 2. initialize a currentId set to currentId
+    this.currentId = currentId;
   }
 
   // 3. a getter function should return the value of our books array
   get books() {
-
+    return this.books;
   }
 
   // function addBook should create an object and push it to our books array
